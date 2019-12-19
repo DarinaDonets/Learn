@@ -8,7 +8,7 @@ public class StringReverseTest extends StringReverse{
 
     @Test
     public void changingStrings() {
-        str.printStringReverseWay1("I love my husband");
+        str.printStringReverseWay1("love");
     }
 
 }
