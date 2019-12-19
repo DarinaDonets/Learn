@@ -8,12 +8,16 @@ public class StringReverseTest extends StringReverse{
 
     @Test
     public void changingStrings() {
-        str.printStringReverseWay1("love");
+        str.printStringReverse("love");
     }
 
     @Test
     public void playWithArray() {
         str.returnArray(new int[]{1,3,4,5,5,5,8});
+        System.out.println("==============");
+        str.returnChangedArray(new int[]{3,44,55,65});
+        System.out.println("==============");
+        str.createNewReverseArray(new String[]{"I ","love ", "my ", "husband "});
     }
 
 }
