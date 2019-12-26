@@ -22,7 +22,13 @@ public class TV  extends Electromachine implements ImageTranscoder {
         System.out.println("TV");
     }
 
+    public void setStandartLoudnessForChannels(int[] channelsArray) {
+        System.out.print("|");
+        for (int num : channelsArray) {
 
+            System.out.print(num + "|");
+        }
+    }
 
     public void tvConditionON_OFF() {
         if (isOn==false) {

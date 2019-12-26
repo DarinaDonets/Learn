@@ -3,7 +3,7 @@ package tests;
 import org.junit.jupiter.api.Test;
 
 public class TVTest {
-//    TV samsung = new TV(66);
+    TV samsung = new TV(66);
 //    TV mi = new TV(55);
 
 
@@ -11,25 +11,26 @@ public class TVTest {
     public void checkTypes() {
         Electromachine mach = new TV();
 
-
-        if (mach instanceof Electromachine){
-
+        if (mach instanceof Electromachine) {
         }
-
         fdf(mach);
-
-
     }
 
-    public void fdf (Electromachine m){
+    public void fdf(Electromachine m) {
         System.out.println(m.m2);
     }
-        @Test
+
+    @Test
     public void checkParent() {
         TV mi = new TV(55);
         mi.M1();
         TV mi2 = new TV();
         mi.M1();
+    }
+
+    @Test
+    public void checkLoudness() {
+        samsung.setStandartLoudnessForChannels(new int[]{1, 3, 4, 5});
     }
 
 //    @Test
