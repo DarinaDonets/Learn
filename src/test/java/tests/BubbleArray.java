@@ -7,7 +7,7 @@ public class BubbleArray {
     boolean isSorted = false;
     int buf;
 
-    public BubbleArray(int[] mas) {
+    public void bubbleSortedArray(int[] mas) {
         while (!isSorted) {
             for (int i = 0; i < mas.length - 1; i++) {
                 if (mas[i] > mas[i + 1]) {

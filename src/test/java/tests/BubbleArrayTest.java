@@ -4,10 +4,11 @@ import org.junit.jupiter.api.Test;
 
 public class BubbleArrayTest {
 
-    BubbleArray first = new BubbleArray(new int[]{11, 344, 54, 5, 6});
+    BubbleArray first = new BubbleArray();
 
     @Test
     public void tryBubble(){
-        System.out.println(first);
+
+        first.bubbleSortedArray(new int[]{3,66,7,884,1});
     }
 }
